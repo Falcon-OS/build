@@ -266,27 +266,19 @@ class EdifyGenerator(object):
 
   def PrintElixirBanner(self, android_version, build_id, build_date,
                                   security_patch, device):
-    self.Print("----------------------------------------------")
-    self.Print("      ____            _           _         ");
-    self.Print("     |  _ \ _ __ ___ (_) ___  ___| |_       ");
-    self.Print("     | |_) | '__/ _ \| |/ _ \/ __| __|      ");
-    self.Print("     |  __/| | | (_) | |  __/ (__| |_       ");
-    self.Print("     |_|   |_|  \___// |\___|\___|\__|      ");
-    self.Print("     |_|            |_/                     ");
-    self.Print("                                            ");
-    self.Print("            _____ _ _      _                ");
-    self.Print("           | ____| (_)_  _(_)_ __           ");
-    self.Print("           |  _| | | \ \/ / | '__|          ");
-    self.Print("           | |___| | |>  <| | |             ");
-    self.Print("           |_____|_|_/_/\_\_|_|             ");
-    self.Print("                                            ");                   
-    self.Print("----------------------------------------------")
+    self.Print("---------------------------------------------");
+    self.Print("     ___ _   _    ___ ___  _  _    ___  ___  ");
+    self.Print("    | __/_\ | |  / __/ _ \| \| |  / _ \/ __| ");
+    self.Print("    | _/ _ \| |_| (_| (_) | .` | | (_) \__ \ ");
+    self.Print("    |_/_/ \_\____\___\___/|_|\_|  \___/|___/ ");
+    self.Print("                                             ");                   
+    self.Print("---------------------------------------------")
     self.Print(" Android Version: %s"%(android_version));
     self.Print(" Build ID: %s"%(build_id));
     self.Print(" Build Time: %s"%(build_date));
     self.Print(" Security Patch: %s"%(security_patch));
     self.Print(" Device: %s"%(device))
-    self.Print("----------------------------------------------")
+    self.Print("---------------------------------------------")
 
   def TunePartition(self, partition, *options):
     fstab = self.fstab
