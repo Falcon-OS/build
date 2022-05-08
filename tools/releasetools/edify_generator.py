@@ -272,14 +272,16 @@ class EdifyGenerator(object):
     self.Print("    | _/ _ \| |_| (_| (_) | .` | | (_) \__ \   ");
     self.Print("    |_/_/ \_\____\___\___/|_|\_|  \___/|___/   ");
     self.Print("                                               ");                   
-    self.Print("                BY: ZABUKA ZUZU                ");
+    self.Print("                   BY: ARUN GZ                 ");
     self.Print("                   Team Falcon                 ");
     self.Print("-----------------------------------------------")
     self.Print(" Android Version: %s"%(android_version));
+    self.print(" Build Type: %s"%(build_type));
     self.Print(" Build ID: %s"%(build_id));
     self.Print(" Build Time: %s"%(build_date));
     self.Print(" Security Patch: %s"%(security_patch));
-    self.Print(" Device: %s"%(device))
+    self.Print(" Device: %s"%(device));
+    self.print(" Device Maintainer: %s"%(device_maintainer))
     self.Print("-----------------------------------------------")
 
   def TunePartition(self, partition, *options):
